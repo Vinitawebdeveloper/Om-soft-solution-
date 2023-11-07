@@ -1,0 +1,12 @@
+body{
+    background-color: aqua;
+}
+#navigation{
+    padding: 5px;
+
+}
+#navigation:hover{
+    background-color: rgb(15, 134, 238);
+    color: pink;
+
+}

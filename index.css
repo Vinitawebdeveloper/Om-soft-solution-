@@ -1,5 +1,10 @@
-body{
-    background-color: aqua;
+.navigation{
+    /* background-color: aqua; */
+    height: 48vw;
+    background-image: url("./Images/pexels-wallsio-17724860.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .nav-link{
@@ -14,11 +19,16 @@ body{
 
 
 }
+.navbar{
+    transition: all 0.2s;
+    background-color: transparent;
+
+}
 
 .navbar:hover{
     /* text-decoration: underline; */
-    border-bottom: 2px solid green;
-    background-color: rgb(34, 81, 210);
+    /* border-bottom: 2px solid green; */
+    background-color: rgb(201, 201, 202);
 
 
 }
@@ -27,7 +37,7 @@ body{
 
 }
 #navigation:hover{
-    background-color: rgb(15, 134, 238);
+    background-color: rgb(224, 229, 233);
     color: pink;
 
 }

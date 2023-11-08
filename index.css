@@ -1,6 +1,27 @@
 body{
     background-color: aqua;
 }
+
+.nav-link{
+    transition: all 0.2s;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover{
+    /* text-decoration: underline; */
+    border-bottom: 2px solid green;
+    /* background-color: rgb(34, 81, 210); */
+
+
+}
+
+.navbar:hover{
+    /* text-decoration: underline; */
+    border-bottom: 2px solid green;
+    background-color: rgb(34, 81, 210);
+
+
+}
 #navigation{
     padding: 5px;
 

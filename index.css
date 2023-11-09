@@ -1,11 +1,11 @@
-.navigation{
-    /* background-color: aqua; */
+/* .navigation{
+    /* background-color: aqua; 
     height: 48vw;
     background-image: url("./Images/pexels-wallsio-17724860.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 .nav-link{
     transition: all 0.2s;
@@ -16,9 +16,7 @@
     /* text-decoration: underline; */
     border-bottom: 2px solid green;
     /* background-color: rgb(34, 81, 210); */
-
-
-}
+    }
 .navbar{
     transition: all 0.2s;
     background-color: transparent;

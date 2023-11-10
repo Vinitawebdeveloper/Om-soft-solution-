@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,21 +9,135 @@ body{
     height: 100vh;
     display: grid;
     place-items: center;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,700;1,900&display=swap');
+
+
+:root {
+    --purple500: #281154;
+    --purple300: #270282;
+    --purple600:#1b0058;
+    --red600:#dc0000;
+    --body:#1916ff;
+    --max-width:1200px;
 }
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+
+section{
+    scroll-margin: 50px;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5vw 0;
+    
+}
+
+.logo{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+button{
+    padding: 10px 15px; 
+    border: none;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+}
+
+header{
+    color: rgb(25, 24, 24);
+    /* background-color: var(--purple300); */
+    position: sticky;
+    top: 0;
+    box-shadow:5px 5px 5px #0000 ;
+    /* z-index: 100; */
+}
+header:hover{
+    background-color:#fff;
+    color: black;
+    /* background-color: var(--purple300); */
+    position: sticky;
+    top: 0;
+    /* box-shadow:5px 5px 5px #0000 ; */
+    /* z-index: 100; */
+}
+ul{
+    list-style: none;
+}
+
+nav ul li{
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease-in;
+}
+
+nav ul li:hover{
+    border-bottom: 2px solid white;
+    transition: 0.2s ease-in;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    /* color: black; */
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0% auto ;
+}
+
+
 .imgSlider{
     margin-top: 0;
     /* border: 5px solid blue; */
     width: 100%;
     height: 46.9vw;
-    background-image: url(./Images/pexels-wallsio-17724860.jpg);
+    background-image: url("./Images/pexels-wallsio-17724860.jpg");
     background-size: 100% 100%;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    animation: changeImage 20s linear infinite direction fill-mode;
+    animation: changeImage 10s linear infinite ;
 }
 
 @keyframes changeImage {
     0%{
-        background-image: url();
+        background-image: url("./Images/pexels-thisisengineering-3861958.jpg");
+    }
+    50%{
+        background-image: url("./Images/pexels-wallsio-17724860.jpg");
+    }
+    100%{
+        background-image: url("./Images/WINDOW_THREE.jpeg");
     }
     
 }

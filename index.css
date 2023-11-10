@@ -1,41 +1,29 @@
-/* .navigation{
-    /* background-color: aqua; 
-    height: 48vw;
-    background-image: url("./Images/pexels-wallsio-17724860.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
-
-.nav-link{
-    transition: all 0.2s;
-    border-bottom: 2px solid transparent;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rebeccapurple;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.imgSlider{
+    margin-top: 0;
+    /* border: 5px solid blue; */
+    width: 100%;
+    height: 46.9vw;
+    background-image: url(./Images/pexels-wallsio-17724860.jpg);
+    background-size: 100% 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    animation: changeImage 20s linear infinite direction fill-mode;
 }
 
-.nav-link:hover{
-    /* text-decoration: underline; */
-    border-bottom: 2px solid green;
-    /* background-color: rgb(34, 81, 210); */
+@keyframes changeImage {
+    0%{
+        background-image: url();
     }
-.navbar{
-    transition: all 0.2s;
-    background-color: transparent;
-
-}
-
-.navbar:hover{
-    /* text-decoration: underline; */
-    /* border-bottom: 2px solid green; */
-    background-color: rgb(201, 201, 202);
-
-
-}
-#navigation{
-    padding: 5px;
-
-}
-#navigation:hover{
-    background-color: rgb(224, 229, 233);
-    color: pink;
-
+    
 }
